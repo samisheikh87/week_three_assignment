@@ -1,8 +1,10 @@
-export default function ColorList({ colorArray }) {
+export default function Color({ colors }) {
   return (
     <ul>
-      {colorArray.map((color, index) => (
-        <li key={index}>{color}</li>
+      {colors.map((color, index) => (
+        <li key={index} style={{ color: color }}>
+          {color}
+        </li>
       ))}
     </ul>
   );
