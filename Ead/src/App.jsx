@@ -1,14 +1,13 @@
-import './App.css'
-import ColorList from "./ColorList";
+import "./App.css";
+import Color from "./components/Colors";
 
 export default function App() {
-
-  const colors = ["Red", "Green", "Blue", "Yellow", "Purple"];
+  const colors = ["Crimson", "Teal", "Goldenrod", "Indigo", "Coral"];
 
   return (
     <div>
-      <ColorList colorArray={colors} />
+      <h1>Color List</h1>
+      <Color colors={colors} />
     </div>
   );
 }
-
